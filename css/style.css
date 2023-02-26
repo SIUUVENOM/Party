@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =====NavBar===== */
+.side-nav {
+  position: fixed;
+  z-index: 999;
+  width: 0px;
+  height: 100vh;
+  background-color: #414658;
+}
+
+.icon {
+  width: 20px;
+  color: #fff;
+  margin: 10px 5px 10px auto;
+  cursor: pointer;
+}
+
+.side-nav ul {
+  margin-top: 20px;
+}
+
+.side-nav ul li {
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  display: block;
+}
+
+.side-nav ul li a,
+.icon {
+  display: none;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+.side-nav ul li a:hover,
+.icon:hover {
+  color: #7d3c49;
+}
+/* =====Home===== */
+.home {
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.layer {
+  background-color: rgba(252, 5, 5, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.home h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.home p {
+  color: #fff;
+}
+
+.home .open-nav {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translatey(-50%);
+  z-index: 999;
+  cursor: pointer;
+  align-self: center;
+  -webkit-transform: translatey(-50%);
+  -moz-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  -o-transform: translatey(-50%);
+}
+
+/* =====Singers===== */
+
+.singers {
+  padding: 100px 0;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.singers h3 {
+  background-color: #e68285;
+  color: #fff;
+  margin: unset;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.singers .singer {
+  background-color: #cccccc;
+  padding: 10px;
+  display: none;
+}
+
+/* =====event===== */
+
+.event {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.day,
+.hours,
+.minutes,
+.seconds {
+  border: 1px solid #fff;
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* =====contact===== */
+
+.contact input,
+.contact textarea {
+  border: 1px solid gray;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-size: 20px;
+  color: gray;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+    0 0 8px rgb(102 175 233 / 60%);
+}
+
+.social-icon i:hover {
+  background-color: #d62e33;
+  color: #fff;
+  border-color: transparent !important;
+}
